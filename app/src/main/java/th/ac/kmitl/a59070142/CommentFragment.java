@@ -25,7 +25,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class PostFragment extends Fragment {
+public class CommentFragment extends Fragment {
 
     int id;
     String result;
@@ -41,7 +41,7 @@ public class PostFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_post, container, false);
+        return inflater.inflate(R.layout.fragment_comment, container, false);
     }
 
     @Override
@@ -54,7 +54,7 @@ public class PostFragment extends Fragment {
 
     void initBackButton()
     {
-        Button backButton = getView().findViewById(R.id.post_back_button);
+        Button backButton = getView().findViewById(R.id.comment_back_button);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,7 +77,7 @@ public class PostFragment extends Fragment {
             protected Void doInBackground(Void... voids) {
                 OkHttpClient client = new OkHttpClient();
                 try {
-                    Request request = new Request.Builder().url("https://jsonplaceholder.typicode.com/users/"+id+"/posts").build();
+                    Request request = new Request.Builder().url("https://jsonplaceholder.typicode.com/posts/"+id+"/comments").build();
 
                     Response response = client.newCall(request).execute();
                     result = response.body().string();
