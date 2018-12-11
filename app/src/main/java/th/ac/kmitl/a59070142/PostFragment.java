@@ -48,8 +48,9 @@ public class PostFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        // not completed
         initBackButton();
-        initRestAPI();
+//        initRestAPI();
     }
 
     void initBackButton()
