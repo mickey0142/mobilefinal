@@ -23,7 +23,14 @@ public class RegisterFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        myDB = getActivity().openOrCreateDatabase("my.db", Context.MODE_PRIVATE, null);
+        try
+        {
+            myDB = getActivity().openOrCreateDatabase("my.db", Context.MODE_PRIVATE, null);
+        }
+        catch (NullPointerException e)
+        {
+            Log.d("final", "openOrCreateDatabase return NullPointerException : " + e.getMessage());
+        }
         myDB.execSQL("CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY AUTOINCREMENT, userId VARCHAR(12), name VARCHAR(50), age INTEGER, password VARCHAR(30))");
     }
 
@@ -107,7 +114,14 @@ public class RegisterFragment extends Fragment {
                     myDB.insert("user", null, row);
                     Log.d("final", "insert data into table");
                     Toast.makeText(getContext(), "Register complete", Toast.LENGTH_SHORT).show();
-                    getFragmentManager().popBackStack();
+                    try
+                    {
+                        getFragmentManager().popBackStack();
+                    }
+                    catch (NullPointerException e)
+                    {
+                        Log.d("final", "popBackStack return NullPointerException : " + e.getMessage());
+                    }
                 }
             }
         });

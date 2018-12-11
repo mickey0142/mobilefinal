@@ -13,7 +13,7 @@
             android:padding="30dp">
 
             <EditText
-                android:id="@+id/register_user_id"
+                android:id="@+id/profile_user_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="User Id"
@@ -21,7 +21,7 @@
                 android:drawableLeft="@drawable/ico_user"/>
 
             <EditText
-                android:id="@+id/register_name"
+                android:id="@+id/profile_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Name"
@@ -29,7 +29,7 @@
                 android:drawableLeft="@drawable/ico_name"/>
 
             <EditText
-                android:id="@+id/register_age"
+                android:id="@+id/profile_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Age"
@@ -37,18 +37,25 @@
                 android:drawableLeft="@drawable/ico_date"/>
 
             <EditText
-                android:id="@+id/register_password"
+                android:id="@+id/profile_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
                 android:inputType="text"
                 android:drawableLeft="@drawable/ico_lock"/>
 
-            <Button
-                android:id="@+id/register_register_button"
+            <EditText
+                android:id="@+id/profile_quote"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="REGISTER NEW ACCOUNT"/>
+                android:hint="Quote"
+                android:inputType="textMultiLine"/>
+
+            <Button
+                android:id="@+id/profile_save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"/>
 
         </LinearLayout>
     </ScrollView>

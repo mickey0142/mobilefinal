@@ -3,4 +3,48 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/home_hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Hello firstname lastname"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/home_quote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="no quote yet"/>
+
+            <Button
+                android:id="@+id/home_profile_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROFILE SETUP"/>
+
+            <Button
+                android:id="@+id/home_friend_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MY FRIEND"/>
+
+            <Button
+                android:id="@+id/home_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN OUT"/>
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
