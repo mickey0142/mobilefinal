@@ -12,42 +12,39 @@
             android:orientation="vertical"
             android:padding="30dp">
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:src="@drawable/login_picture"/>
-
             <EditText
-                android:id="@+id/login_user_id"
+                android:id="@+id/register_user_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="User Id"
-                android:inputType="text"
                 android:drawableLeft="@drawable/ico_user"/>
 
             <EditText
-                android:id="@+id/login_password"
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:drawableLeft="@drawable/ico_name"/>
+
+            <EditText
+                android:id="@+id/register_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:drawableLeft="@drawable/ico_date"/>
+
+            <EditText
+                android:id="@+id/register_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
-                android:inputType="textPassword"
                 android:drawableLeft="@drawable/ico_lock"/>
 
             <Button
-                android:id="@+id/login_login_button"
+                android:id="@+id/register_register_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="LOGIN"
-                />
-
-            <TextView
-                android:id="@+id/login_register_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:textColor="#449922"
-                android:text="Register New Account"/>
+                android:text="REGISTER NEW ACCOUNT"/>
 
         </LinearLayout>
     </ScrollView>
