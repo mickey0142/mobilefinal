@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/my_friend_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/my_friend_todo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TODOS"/>
+
+            <Button
+                android:id="@+id/my_friend_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POST"/>
+
+            <Button
+                android:id="@+id/my_friend_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALBUMS"/>
+
+            <Button
+                android:id="@+id/my_friend_back_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Back"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

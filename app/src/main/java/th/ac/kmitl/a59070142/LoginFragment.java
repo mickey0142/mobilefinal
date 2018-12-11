@@ -59,6 +59,10 @@ public class LoginFragment extends Fragment {
         {
             ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
         }
+        if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.INTERNET}, 0);
+        }
         checkAlreadyLoggedIn();
         initRegisterButton();
         initLoginButton();

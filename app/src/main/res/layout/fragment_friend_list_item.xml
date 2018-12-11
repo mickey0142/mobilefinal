@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/friend_item_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="id : name"/>
+
+    <TextView
+        android:id="@+id/friend_item_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email"/>
+
+    <TextView
+        android:id="@+id/friend_item_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="phone"/>
+
+    <TextView
+        android:id="@+id/friend_item_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="website"/>
+
+</LinearLayout>

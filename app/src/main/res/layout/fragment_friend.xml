@@ -12,7 +12,16 @@
             android:orientation="vertical"
             android:padding="30dp">
 
+            <Button
+                android:id="@+id/friend_back_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back"/>
 
+            <ListView
+                android:id="@+id/friend_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"></ListView>
 
         </LinearLayout>
     </ScrollView>
